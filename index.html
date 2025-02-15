@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanyisa Manganyi - Dietitian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">Khanyisa Manganyi</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking" class="btn">Book Now</a></li>
+            </ul>
+        </nav>
+        <div class="hamburgerMenu" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('images/hero1.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero2.jpg')"></div>
+            <div class="slide" style="background-image: url('images/hero3.jpg')"></div>
+        </div>
+        <div class="hero-text">
+            <h1>Eat Well, Be Well</h1>
+            <p>Professional Dietitian Services for a Healthier You</p>
+            <a href="#booking" class="btn">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="animate services-section">
+        <div class="section-container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Chronic Conditions</h3>
+                    <ul>
+                        <li>Diabetes Management</li>
+                        <li>Heart Health</li>
+                        <li>Kidney Disease</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Nutrition Therapy</h3>
+                    <ul>
+                        <li>Weight Management</li>
+                        <li>Eating Disorders</li>
+                        <li>Food Allergies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Specialized Care</h3>
+                    <ul>
+                        <li>Prenatal Nutrition</li>
+                        <li>Pediatric Nutrition</li>
+                        <li>Sports Nutrition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="animate about-section">
+        <div class="section-container">
+            <div class="about-content">
+                <img src="images/khanyisa.jpg" alt="Khanyisa Manganyi">
+                <div class="about-text">
+                    <h2>Meet Khanyisa Manganyi</h2>
+                    <p class="highlight">Registered Dietitian Nutritionist</p>
+                    <p>With over 8 years of clinical experience, I specialize in creating personalized nutrition plans that align with your health goals and medical needs. My approach combines evidence-based practice with compassionate care to help you achieve sustainable results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In the Booking Section -->
+<section id="booking" class="animate">
+    <div class="section-container">
+        <h2>Book an Appointment</h2>
+        <p>Select a suitable time for your consultation.</p>
+        <div class="calendly-container">
+            <iframe src="https://calendly.com/valoyitech-rmea/30min?hide_gdpr_banner=1"
+                width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="animate contact-section">
+        <div class="section-container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Giyani, Masingita Mall<br>(Next to Magic Store)</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Contact</h3>
+                    <p>081 005 6684<br>khanyisamanganyi9@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Hours</h3>
+                    <p>Mon-Fri: 8am - 6pm<br>Sat: 9am - 1pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
