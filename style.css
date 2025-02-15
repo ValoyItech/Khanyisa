@@ -466,3 +466,109 @@ header {
         transform: scaleY(0);
     }
 }
+
+/* Adjust iframe container for desktop and mobile */
+#booking .calendly-container iframe {
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+    border: none;
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+/* Mobile optimization: reduce height on small screens */
+@media only screen and (max-width: 768px) {
+    #booking .calendly-container iframe {
+        height: 600px; /* Smaller height for mobile */
+    }
+}
+
+/* Optional: Add padding and center the content */
+#booking .section-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Optional: Style the booking title */
+#booking h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#booking p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.contact-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: #ffcc80;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 90%;
+    }
+}
+
+
